@@ -1,11 +1,12 @@
 def factorial(num):
-	#conditional checking for negative number
-    #conditional checking for input of 0
-    """conditional for if non-negative number
-    for loop:
-    i starts from input value and decreases by 1 each iteration
-    2nd i value multiplied by the previous and the product saved
-    next i multiplied by the saved product, this product saved, etc.
-    loop ends once input reaches 0
-    """
-    #return product
+	if num < 0:
+		print("Negative doesn't work here son.")
+	elif num == 0:
+		product = 1
+	else:
+		for i in range(num, 0, -1):
+			if i == num:
+				product = i
+			else:
+				product *= i
+	return product
