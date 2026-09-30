@@ -9,4 +9,3 @@ def factorial(num):
     loop ends once input reaches 0
     """
     #return product
-	pass
